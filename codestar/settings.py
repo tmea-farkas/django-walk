@@ -90,7 +90,7 @@ DATABASES = {
 }
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://*.vscodeapp.com",
+    "https://*.gitpod.io",
     "https://*.herokuapp.com"
 ]
 # Password validation
