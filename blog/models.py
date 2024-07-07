@@ -15,6 +15,8 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     exerpt = models.TextField(blank=True)
     updated_on = models.DateTimeField(auto_now=True)
+    field_2 = models.CharField(default='Hello, World!')
+    field_3 = models.CharField(null=True)
 
     class Meta:
         ordering = ["-created_on"]
@@ -30,6 +32,7 @@ class Comment(models.Model):
     body = models.TextField()
     approved = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)
+    
 
     class Meta:
         ordering = ["created_on"]
